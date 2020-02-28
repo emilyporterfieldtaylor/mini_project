@@ -19,6 +19,10 @@ app.get("/tables", function(req, res) {
   res.sendFile(path.join(__dirname, "tables.html"));
 });
 
+app.get("/api/waitlist", function(req, res) {
+  return res.json(waitlist);
+});
+
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
