@@ -20,7 +20,11 @@ app.get("/tables", function(req, res) {
 });
 
 app.get("/api/waitlist", function(req, res) {
-  return res.json(waitlist);
+  return res.json(waitList);
+});
+
+app.get("/api/tables", function(req, res) {
+  return res.json(tables);
 });
 
 app.listen(PORT, function() {
