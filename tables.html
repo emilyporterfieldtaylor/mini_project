@@ -64,5 +64,29 @@
 
   </div>
 
+ <script>
+
+   let tables = [];
+   let waitList = [];
+
+ $.ajax({
+  url: "/api/tables"
+  method: "GET"
+}).then(function (data) {
+
+  for (let index = 0; index < tables.length; index++) {
+    
+    
+  }
+
+}
+
+$.ajax ({
+  url:"/api/waitList"
+  method: "GET"
+}).then(function (data) {
+
+}
+</script>
 </body>
 
